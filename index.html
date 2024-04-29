@@ -12,52 +12,66 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--HEADER 
+      SECTION-->
     <header>
       <nav class="nav">
-        <p>...<i class="bx bx-bracket"></i></p>
+        <img src="assets/logoa.svg" alt="logo" class="logo">
         <ul class="nav_links">
           <li class="navlink"><a href="#about">About</a></li>
           <li class="navlink"><a href="#projects">Projects</a></li>
           <li class="navlink"><a href="#blog">Blog</a></li>
           <li class="navlink"><a href="#contact">Contact</a></li>
         </ul>
+        <i class='bx bx-menu' style='color:#ffffff'  ></i>
       </nav>
+     <div class="container">
       <div class="welcomeInfo">
         <h1>welcome</h1>
         <h3>
-          Hi I am Nathaniel Nwbabueze, a <span>full stack developer </span>from
+          Hi, I am Nathaniel Nwabueze, a <span>full stack developer </span>from
           Nigeria. <br /><span>You deserve the best solution.</span>
         </h3>
         <a href="#about" class="aboutScroll"
           ><p></p>
-          <i class="bx bxs-down-arrow"></i
+          <i class="bx bxs-down-arrow "></i
         ></a>
       </div>
-    </header>
+    </div> 
+   
+    
+  </header>
+
+    <!--MAIN 
+      
+      AREA ABOUT SECTION-->
+      <main>
     <section id="about">
       <div class="header">
-        <h1>About Me</h1>
-        <a href="#contact" class="cta-button">Hire Me</a>
+        <h2><span class="header-icon"><i class='bx bx-user-circle bx-flashing' ></i></span>About Me </h1>
+       
       </div>
-      <div class="cards">
-        <img src="assets/143996177.png" alt="Profile Picture" />
-        <div class="info">
-          <h1>Nathaniel Nwabueze</h1>
+      <div class="cards" id="aboutme" >
+        <div class="profile-container">
+          <img src="assets/profike-pix.jpg" alt="Profile Picture" />
+        </div>
+        <div class="info" >
           <p>
-            As an aspiring software engineer with a unique background in agriculture, I bring a fresh perspective and a strong work ethic to the world of technology. My journey began as a creative farmer, where I cultivated a deep appreciation for hard work and the natural world's harmony. Intrigued by the limitless possibilities at the nexus of farming and technology, I transitioned into software engineering. Through dedicated study and hands-on experience, I've acquired proficiency in a range of technologies essential to modern development. I've completed courses in software engineering, honing my skills in JavaScript, React, Node.js, Express, and MongoDB. My tech stack reflects my commitment to leveraging cutting-edge tools to build innovative solutions. With a keen eye for detail and a passion for accessibility, I strive to create user-friendly experiences that empower and enrich. I am now actively seeking opportunities to apply my skills and contribute to impactful projects in the software field.
+           I am a software developer with a unique background in agriculture, I bring a fresh perspective and a strong work ethic to the world of technology. My journey began as a farmer, where I cultivated a deep appreciation for hard work and the natural world's harmony. Intrigued by the limitless possibilities at the nexus of farming and technology, I transitioned into software engineering. Through dedicated study and hands-on experience, I've acquired proficiency in a range of technologies essential to modern development. I've completed courses in software engineering, honing my skills in JavaScript, React, Node.js, Express, and MongoDB. My tech stack reflects my commitment to leveraging cutting-edge tools to build innovative solutions. With a keen eye for detail and a passion for accessibility, I strive to create user-friendly experiences that empower and enrich. 
           </p>
         </div>
       </div>
     </section>
     <section id="features">
+      <!--SKILL 
+        SECTION-->
       <div class="header">
-        <h1>Skill Set</h1>
-        
+        <h2><span class="header-icon"><i class='bx bx-briefcase-alt bx-flashing' ></i></span>Skill Set </h2>
       </div>
       <div class="feature-cards">
         <div class="cards">
           <div class="info">
-            <i class="bx bxs-devices"></i>
+            <i class="bx bxs-devices header-drg"></i>
             <h1>responsive design</h1>
             <p>
               With careful attention to detail, I specialize in creating websites that effortlessly adjust to various devices and screen sizes. By skillfully designing flexible layouts, fluid grids, and using CSS media queries, I guarantee a seamless viewing experience for users across different platforms.
@@ -66,7 +80,7 @@
         </div>
         <div class="cards">
           <div class="info">
-            <i class="bx bxs-component"></i>
+            <i class="bx bxs-component header-drg"></i>
             <h1>Creative projects</h1>
             <p>
               my problem solving nature is evident in creating interactive web
@@ -77,14 +91,14 @@
         </div>
         <div class="cards">
           <div class="info">
-            <i class="bx bx-code-curly"></i>
+            <i class="bx bx-code-curly header-drg"></i>
             <h1>ToolKit</h1>
             <div class="skillSet">
-             <p><i id="skillSet" class='bx bxl-html5'></i>
+             <p><i id="skillSet" class='bx bxl-html5 '></i>
               <i id="skillSet" class='bx bxl-css3' ></i>
               <i id="skillSet" class='bx bxl-tailwind-css' ></i></p> 
               <p><i id="skillSet" class='bx bxl-javascript' ></i>
-                <i id="skillSet" class='bx bxl-nodejs' ></i>
+                <i id="skillSet" class='bx bxl-nodejs bx-tada' ></i>
                 <i id="skillSet" class='bx bxl-react' ></i></p>
               <p>
                 <i id="skillSet" class='bx bxl-postgresql' ></i>
@@ -95,16 +109,18 @@
           </div>
         </div>
       </div>
+     
     </section>
+    <!--PROJECTS-->
     <section id="projects">
       <div class="header">
-        <h1>My Works</h1>
-        <a href="#">See more</a>
+        <h2><span class="header-icon"><i class='bx bx-desktop bx-flashing'   ></i></span>PROJECTS</h1>
+        
       </div>
       <div class="feature-cards">
         <div class="cards">
           <div class="info">
-            <i class="bx bxs-devices"></i>
+            <i class="bx bxs-devices header-drg"></i>
             <h1>responsive design</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
@@ -116,7 +132,7 @@
         </div>
         <div class="cards">
           <div class="info">
-            <i class="bx bxs-component"></i>
+            <i class="bx bxs-component header-drg"></i>
             <h1>Creative projects</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
@@ -128,7 +144,7 @@
         </div>
         <div class="cards">
           <div class="info">
-            <i class="bx bx-code-curly"></i>
+            <i class="bx bx-code-curly header-drg"></i>
             <h1>Code Quality</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
@@ -139,16 +155,18 @@
           </div>
         </div>
       </div>
+      <div class="section-footer"><a href="#contact" id="cta-button">Hire Me <a href="#">See more</a></a></div>
     </section>
+    <!--BLOG-->
     <section id="blog">
       <div class="header">
-        <h1>Blog</h1>
-        <a href="#blog">View All</a>
+        <h2><span class="header-icon"><i class='bx bx-edit bx-flashing'  ></i></span>Blog</h1>
+        
       </div>
       <div class="feature-cards">
         <div class="cards">
           <div class="info">
-            <i class="bx bxs-devices"></i>
+            <i class="bx bxs-devices header-drg"></i>
             <h1>responsive design</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
@@ -160,7 +178,7 @@
         </div>
         <div class="cards">
           <div class="info">
-            <i class="bx bxs-component"></i>
+            <i class="bx bxs-component header-drg"></i>
             <h1>Creative projects</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
@@ -172,7 +190,7 @@
         </div>
         <div class="cards">
           <div class="info">
-            <i class="bx bx-code-curly"></i>
+            <i class="bx bx-code-curly header-drg"></i>
             <h1>Code Quality</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
@@ -183,12 +201,14 @@
           </div>
         </div>
       </div>
+      <div class="section-footer"> <a href="#blog">View All</a></div>
     </section>
+    <!--CONTACT-->
     <section id="contact">
       <div class="header">
-        <h1>Message Me</h1>
+        <h2><span class=" header-icon"><i class='bx bx-envelope bx-flashing'></i></span>Message Me </h2>
       </div>
-      
+      <div class="contact-container">
         <form action="">
           <input type="text" placeholder="full Name" />
           <input type="text" placeholder="Email" />
@@ -202,9 +222,55 @@
           ></textarea>
           <input type="submit" value="Send" class="cta-button"/>
         </form>
-      
+      </div>
+        
+        </section>
+      </main>
+        <footer>
+			<div>
+				<h3>Connect with me</h3>
+				<a
+					href="https://twitter.com/NwabuezeNath"
+					id="profile-link"
+					target="_blank"
+					><img
+						src="https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000"
+						alt="twitter"
+						width="30"
+						height="30"
+				/></a>
+				<a href="" id="profile-link" target="_blank"
+					><img
+						src="https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png"
+						alt="linkedin"
+						width="30"
+						height="30"
+				/></a>
+				<a
+					href="https://github.com/nathphil9411"
+					id="profile-link"
+					target="_blank"
+					><img
+						src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-github-1.png"
+						alt="github"
+						width="20"
+						height="20"
+				/></a>
+				<a
+					href="https://www.freecodecamp.org/nathphil"
+					id="profile-link"
+					target="_blank"
+					><img
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAhFBMVEUKCiMLCyQNDSYMDCUAABYAABoAABUAABh8fImenqgGBh+JiZX///8GBiAWFi03N0tbW2y0tLxpaXgAABMcHDPe3uKVlaAvL0UpKT/5+fpLS11YWGmoqLEfHzbY2NyMjJjBwcdubn3y8vS3t77n5+rFxcqRkZ12doRDQ1YAAAw7O0/R0daRBOBzAAABnUlEQVR4AWIYLADQK1klVgjEUHQsE95wcXju3nb/+2tgoP5dNHKIoo3+w2j1h6idm2T7AZBXkZAXJ7MwKjS+rdhUiLh2KVIa5CwvWEeASlRhiGFcjbTRAxrarnYmEk2JOdseXaBiPQLLFdYcA5smxYaNJNuudsGMthrY51mktdp3IlGBQxP9EuGIFU5+wkuUTjUJChqDujUEqEhHPMvPFSu6XI2aLDfIsdeRV9Ydxae6mxsD+JME2GM/DcO4O1plrlUEpJ0zUK0xWz4iYXyC5SegqQJQLLHdYkF2AiTFcQAsP7HC4eUJed29GVIcJAUduyw2Ne9n0GywWuEmAXugkiLFvgyi2T5DzbwBPod1PZLiNerG9PhW7Cprb5LimA1JX5E0KjPXt2AF8DVm3uhgl08k8ZOZVCuvB0rRZW7XtH/bZtG1ktRwgS1bJdLbeSmNWLcZ1mso2TijbDD7c6yOi9V+J5Lmos20DrtXFkXZCzbeTDs6kqCSf9CDjmN+OPFH4lmHXhDH9NK03vQJR4L977/eOftFs+rXYa36p+MdsOMYiAbwo/cAAAAASUVORK5CYII="
+						alt="github"
+						width="20"
+						height="20"
+				/></a>
+			</div>
+			<p>Ezeanaka Nathaniel &#9400; 2023</p>
+		</footer>   
     <button class="scrollTotop" id="scrollTop">
-      <i class="bx bxs-up-arrow"></i>
+      <i class="bx bxs-up-arrow bx-fade-up"></i>
     </button>
     <canvas class="particles-js"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
