@@ -307,7 +307,7 @@ section .section-footer a:hover {
 	margin-bottom: 1.2em;
 }
 .info h3 {
-	text-decoration: underline;
+	font-size: 1.5em;
 }
 .info p {
 	font-size: 1.1em;
@@ -429,6 +429,9 @@ footer div p {
 		backdrop-filter: blur(5px);
 		z-index: 10;
 	}
+	.header.show-mobile-menu.mobile-menu-open::before {
+		display: block;
+	}
 	.nav ul {
 		justify-content: flex-start;
 		position: fixed;
@@ -523,7 +526,19 @@ footer div p {
 		color: #ffffff;
 		cursor: pointer;
 	}
-	body {
-		background-color: black;
+	.cta-button {
+		background-color: #ff5722;
+		color: white;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0.5rem;
+	}
+	.scrollTotop {
+		bottom: 7rem;
 	}
 }

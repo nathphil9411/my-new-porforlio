@@ -31,15 +31,25 @@ const closeMenu = document.querySelector("#close-menu-btn");
 document.addEventListener("DOMContentLoaded", function () {
 	const menuBtn = document.getElementById("menu-btn");
 	const closeMenuBtn = document.getElementById("close-menu-btn");
+	const navlinks = document.querySelectorAll(".navlink");
+	const header = document.querySelector("header");
 
 	menuBtn.addEventListener("click", function () {
-		header.classList.toggle("show-mobile-menu");
+		header.classList.add("show-mobile-menu", "mobile-menu-open");
 		this.style.display = "none";
 	});
 
-	closeMenuBtn.addEventListener("click", function () {
-		header.classList.toggle("show-mobile-menu");
+	function closeMenu() {
+		header.classList.remove("mobile-menu-open");
+		setTimeout(() => {
+			header.classList.remove("show-mobile-menu");
+		}, 200);
 		menuBtn.style.display = "block";
+	}
+
+	closeMenuBtn.addEventListener("click", closeMenu);
+	navlinks.forEach((link) => {
+		link.addEventListener("click", closeMenu);
 	});
 
 	function toggleMenuButtonVisibility() {
